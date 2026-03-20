@@ -1,0 +1,233 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #020617, #0a2540);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e2e8f0;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+  filter: blur(80px);
+}
+
+
+.logo {
+  width: 300px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+
+  filter: drop-shadow(0 0 20px rgba(41, 219, 160, 0.5));
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(41,219,160,0.4) 0%, transparent 70%);
+  top: 120px; /* ajustás según posición del logo */
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  animation: fadeUp 1s ease;
+}
+
+.hero h2 {
+  font-weight: 300;
+  margin-top: 10px;
+  max-width: 600px;
+  animation: fadeUp 1.2s ease;
+}
+
+/* CTA */
+.cta {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  animation: fadeUp 1.4s ease;
+}
+
+/* BOTONES */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  animation: fadeUp 1.3s ease;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  background: white;
+  color: #1f2937;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background: white;
+  color: #1f2937;
+}
+
+/* SECCIONES */
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+  animation: fadeUp 0.8s ease;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+}
+
+.section p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #4b5563;
+}
+
+/* GRID */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(14px);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #6366f1;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* INFO */
+.card.info {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+/* CONTACTO DESTACADO */
+.section:last-of-type .card {
+  background: linear-gradient(135deg, #020617, #0a2540);
+  color: white;
+}
+
+.section:last-of-type .card strong {
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9rem;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
