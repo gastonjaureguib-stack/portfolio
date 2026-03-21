@@ -5,21 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Gastón Jaureguiberry</title>
 
+  <!-- CSS principal -->
   <link rel="stylesheet" href="./style.css">
 
+  <!-- Tipografía -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- HERO -->
+  <!-- ========================= HERO ========================= -->
   <header class="hero">
-
-
-      <img class="logo" src="./img/logonombre.png" alt="Logo Gastón Jaureguiberry">
-
+    <img class="logo" src="./img/logonombre.png" alt="Logo Gastón Jaureguiberry">
     <h1>Gastón Jaureguiberry</h1>
-    <h2>Desarrollador Web | Marketing & Comunicación<br>  Creación de soluciones digitales</h2>
+    <h2>Desarrollador Web | Marketing & Comunicación<br>Creación de soluciones digitales</h2>
 
     <div class="buttons">
       <a href="#trabajos" class="btn">Mis trabajos</a>
@@ -27,7 +26,7 @@
     </div>
   </header>
 
-  <!-- SOBRE MI -->
+  <!-- ========================= SOBRE MÍ ========================= -->
   <section id="sobre-mi" class="section">
     <h2>Sobre mí</h2>
     <p>
@@ -37,88 +36,135 @@
     </p>
   </section>
 
-  <!-- TRABAJOS -->
-<section id="trabajos" class="section">
-  <h2>Mis proyectos</h2>
-  <p>
-    Desarrollo soluciones digitales enfocadas en resultados reales. Desde sistemas web hasta experiencias pensadas para emprendedores y negocios.
-  </p>
+  <!-- ========================= PROYECTOS ========================= -->
+  <section id="trabajos" class="section">
+    <h2>Mis proyectos</h2>
+    <p>
+      Desarrollo soluciones digitales enfocadas en resultados reales. Desde sistemas web hasta experiencias pensadas para emprendedores y negocios.
+    </p>
 
-  <div class="cards">
+    <div class="cards">
+      <!-- Proyecto 1 -->
+      <div class="card">
+        <h3>Desarrollo web</h3>
+        <p>
+          Creo páginas y sistemas web utilizando HTML, CSS y JavaScript. 
+          Proyectos reales como plataformas de pedidos, sistemas de reservas y tiendas online diseñadas para facilitar procesos y mejorar la presencia digital.
+        </p>
+        <a href="./pages/proyectosweb.html">Ver proyectos</a>
+      </div>
 
-    <div class="card">
-      <h3>Desarrollo web</h3>
-      <p>
-        Creo páginas y sistemas web utilizando HTML, CSS y JavaScript. 
-        Proyectos reales como plataformas de pedidos, sistemas de reservas y tiendas online diseñadas para facilitar procesos y mejorar la presencia digital.
-      </p>
-      <a href="./pages/proyectosweb.html">Ver proyectos</a>
+      <!-- Proyecto 2 -->
+      <div class="card">
+        <h3>Diseño y branding</h3>
+        <p>
+          Desarrollo identidad visual para marcas y emprendimientos: logos, piezas para redes sociales, cartelería y material gráfico pensado para comunicar de forma clara y atractiva.
+        </p>
+        <a href="./pages/diseno.html">Ver proyectos</a>
+      </div>
     </div>
+  </section>
 
-   <div class="card">
-  <h3>Diseño y branding</h3>
-  <p>
-    Desarrollo identidad visual para marcas y emprendimientos: logos, piezas para redes sociales, cartelería y material gráfico pensado para comunicar de forma clara y atractiva.
-  </p>
-  <a href="./pages/diseno.html">Ver proyectos</a>
-</div>
-
-  </div>
-</section>
-
-  <!-- EXPERIENCIA -->
+  <!-- ========================= EXPERIENCIA ========================= -->
   <section class="section">
     <h2>Experiencia Profesional</h2>
 
     <div class="card">
       <h3>Freelance - Desarrollo Web</h3>
-      <p>Creación de sitios web y soluciones digitales.</p>
+      <p>Creación de sitios web, soluciones digitales y redes sociales.</p>
+      <div class="ref-box">
+        <span class="ref-text">Referencia: Laura Rodriguez</span>
+        <a href="https://wa.me/598XXXXXXXXX" target="_blank" class="btn-ref">Contactar</a>
+      </div>
     </div>
 
     <div class="card">
       <h3>Centro Comercial e Industrial de Soriano</h3>
       <p>Encargado de Comunicación y Marketing (2017 - 2022)</p>
+      <div class="ref-box">
+        <span class="ref-text">Referencia: Alicia Irarzabal</span>
+        <a href="https://wa.me/598XXXXXXXXX" target="_blank" class="btn-ref">Contactar</a>
+      </div>
     </div>
 
     <div class="card">
       <h3>Regency Hotels</h3>
-      <p>Ejecutivo de Marketing</p>
+      <p>Ejecutivo de Marketing para la cadena.</p>
+      <div class="ref-box">
+        <span class="ref-text">Referencia: Nicolás Mitta</span>
+        <a href="https://wa.me/598XXXXXXXXX" target="_blank" class="btn-ref">Contactar</a>
+      </div>
     </div>
+
+    <div class="card">
+      <h3>Balmoral Hotels</h3>
+      <p>Ejecutivo de Marketing y eventos</p>
+    </div>
+
   </section>
 
-  <!-- FORMACIÓN -->
+  <!-- ========================= FORMACIÓN ========================= -->
   <section class="section">
     <h2>Formación</h2>
 
-    <div class="card info">
-      <p><strong>Desarrollo Web Full Stack</strong> – Coderhouse (en curso)</p>
-      <p><strong>Técnico en Relaciones Públicas y organización de eventos</strong> – Universidad ORT</p>
-      <p><strong>Analista en Comunicación y Marketing </strong> <br> - Universidad ORT</p>
-      <p><strong>Inglés:</strong> First Certificate</p> 
+    <div class="card info formacion">
+      <div class="item-formacion">
+        <span class="titulo">Desarrollo Web Full Stack</span>
+        <span class="detalle">Coderhouse (en curso)</span>
+      </div>
+
+      <div class="item-formacion">
+        <span class="titulo">Técnico en Relaciones Públicas y organización de eventos</span>
+        <span class="detalle">Universidad ORT</span>
+      </div>
+
+      <div class="item-formacion">
+        <span class="titulo">Analista en Comunicación y Marketing</span>
+        <span class="detalle">Universidad ORT</span>
+      </div>
+
+      <div class="item-formacion">
+        <span class="titulo">Inglés</span>
+        <span class="detalle">First Certificate</span>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section class="section">
-    <h2>Contacto</h2>
+  <!-- ========================= CONTACTO ========================= -->
+<section class="section">
+  <h2>Contacto</h2>
 
-    <div class="card info">
-      <p><strong>📞 Teléfono:</strong> +598 91 602 323</p>
-      <p><strong>📧 Email:</strong> gaston.jaureguib@gmail.com</p>
-      <p><strong>📍 Ubicación:</strong> Uruguay</p>
-      <a href="#">Ver Linkedin</a>
+  <div class="card info contacto-card">
+    <!-- Info principal -->
+    <p><strong>📞 Teléfono:</strong> +598 91 602 323</p>
+    <p><strong>📧 Email:</strong> gaston.jaureguib@gmail.com</p>
+    <p><strong>📍 Ubicación:</strong> Uruguay</p>
+
+    <!-- Botones con iconos -->
+    <div class="contact-buttons">
+      <a href="https://wa.me/59891602323" target="_blank" class="btn-contact">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
+        WhatsApp
+      </a>
+      <a href="mailto:gaston.jaureguib@gmail.com" class="btn-contact">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
+        Email
+      </a>
+      <a href="https://www.linkedin.com/in/gaston-jaureguib/" target="_blank" class="btn-contact">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+        LinkedIn
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
+  <!-- ========================= FOOTER ========================= -->
   <footer>
-  
     <div class="footer-links">
-  <a href="../index.html">Inicio</a>
-  <a href="./proyectosweb.html">Proyectos</a>
-  <a href="./diseno.html">Diseño</a>
-</div>
-
+      <a href="../index.html">Inicio</a>
+      <a href="./pages/proyectosweb.html">Proyectos</a>
+      <a href="./diseno.html">Diseño</a>
+    </div>
     <p>© 2026 - Gastón Jaureguiberry | Desarrollo Web & Estrategia Digital</p>
   </footer>
 
