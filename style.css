@@ -113,7 +113,7 @@ body {
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  gap: 50px;
 }
 
 .card {
@@ -177,6 +177,9 @@ body {
 .card a:hover {
   background: #4f46e5;
   color: white;
+}
+.section .card:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 /* =========================
