@@ -21,7 +21,7 @@ body {
    HERO (pantalla inicial)
 ========================= */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   height: auto;
   background: linear-gradient(135deg, #020617, #0a2540);
   display: flex;
@@ -446,15 +446,7 @@ footer {
     padding: 50px 16px;
   }
 
-  
-  .hero {
-    justify-content: flex-start;
-    padding-top: 80px;
-    height: auto;
-    min-height: 100vh;
-  }
-
-  /* Secciones más compactas */
+    /* Secciones más compactas */
   #trabajos,
   #sobre-mi,
   #misproyectos,
@@ -469,10 +461,6 @@ footer {
 
   .section {
     padding: 50px 16px;
-  }
-
-  .hero {
-    padding: 20px;
   }
 
   #trabajos,
