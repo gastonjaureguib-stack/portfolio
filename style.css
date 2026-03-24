@@ -21,54 +21,35 @@ body {
    HERO (pantalla inicial)
 ========================= */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background: linear-gradient(135deg, #020617, #0a2540);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: #e2e8f0;
   text-align: center;
   padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   position: relative;
   overflow: hidden;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 50%;
-  top: -100px;
-  right: -100px;
-  filter: blur(80px);
-}
 
 .logo {
-  width: 300px;
+  width: 400px;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
   filter: drop-shadow(0 0 20px rgba(41, 219, 160, 0.5));
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle, rgba(41,219,160,0.4) 0%, transparent 70%);
-  top: 120px;
-  left: 50%;
-  transform: translateX(-50%);
-  filter: blur(40px);
-  z-index: 0;
-}
+
 
 .hero h1 {
-  font-size: 3.2rem;
+  font-size: 2.3rem;
   font-weight: 700;
   animation: fadeUp 1s ease;
 }
@@ -462,9 +443,12 @@ footer {
     padding: 50px 16px;
   }
 
-  /* Hero sigue grande */
+  
   .hero {
-    padding: 20px;
+    justify-content: flex-start;
+    padding-top: 80px;
+    height: auto;
+    min-height: 100vh;
   }
 
   /* Secciones más compactas */
@@ -474,6 +458,39 @@ footer {
   #formacion,
   #contacto {
     padding: 10px 16px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .section {
+    padding: 50px 16px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  #trabajos,
+  #sobre-mi,
+  #misproyectos,
+  #formacion,
+  #contacto {
+    padding: 10px 16px;
+  }
+
+  /* 👇 AGREGÁ ESTO */
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .section p {
+    font-size: 0.9rem;
   }
 
 }
