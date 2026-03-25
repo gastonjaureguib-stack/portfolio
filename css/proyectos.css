@@ -8,8 +8,7 @@
 /* BODY */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #ffffff;
-  color: #1f2937;
+  background: white;
 }
 
 /* CONTENEDOR */
@@ -17,33 +16,37 @@ body {
   max-width: 1100px;
   margin: auto;
   padding: 60px 20px;
-}
+  }
 
-/* TITULOS */
-h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  font-weight: 600;
-}
+/* SECCION AZUL: DESARROLLO */
 
-/* SECCIÓN DESTACADA (DESARROLLO) */
+/* Fondo azul */
 .seccion-destacada {
   background: linear-gradient(135deg, #020617, #0a2540);
   color: #fff;
+  text-align: center;
 }
 
+/* Titulo H2 */
 .seccion-destacada h2 {
   color: #fff;
 }
+/*  texto descriptivo P*/
 
-/* GRID */
+.descripcion-seccion {
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+/*  Orden a las imagenes */
+
 .grid-proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
+/*  Card de cada imagen*/
 
-/* CARDS */
 .proyecto {
   background: #ffffff;
   border-radius: 18px;
@@ -54,12 +57,12 @@ h2 {
   flex-direction: column;
 }
 
-/* HOVER */
+/* HOVER movimiento de card */
 .proyecto:hover {
   transform: translateY(-8px);
 }
 
-/* IMAGEN */
+/* IMAGEN de card */
 .proyecto img {
   width: 100%;
   height: auto;
@@ -68,7 +71,8 @@ h2 {
 /* TITULO CARD */
 .proyecto h3 {
   font-size: 18px;
-  padding: 15px 20px 5px;
+  padding: 10px 20px 5px;
+  color: black;
 }
 
 /* TEXTO */
@@ -97,10 +101,134 @@ h2 {
   background: #4338ca;
 }
 
-/* SECCIÓN WIX */
-.seccion-wix {
-  background: #ffffff;
+
+
+/* ------------SECCIÓN WIX-----------------*/
+
+
+
+.contenedorwix {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+  }
+
+/*  texto descriptivo P*/
+
+
+.descripcion-seccionwix {
+  text-align: center;
+  color:black;
+  padding: 30px;
 }
+/*  Orden a las imagenes */
+
+.grid-proyectoswix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 25px;
+  
+}
+/*  Card de cada imagen*/
+
+.proyectowix {
+  background: rgba(243, 239, 239, 0.952);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* HOVER movimiento de card */
+.proyectowix:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGEN de card */
+.proyectowix img {
+  width: 100%;
+  height: auto;
+}
+
+/* TITULO CARD */
+.proyectowix h3 {
+  font-size: 18px;
+  padding: 10px 20px 5px;
+  color: black;
+}
+
+/* TEXTO */
+.proyectowix p {
+  font-size: 14px;
+  padding: 0 20px 20px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* BOTON */
+.proyectowix a {
+  margin: 0 20px 20px;
+  padding: 10px;
+  text-align: center;
+  background: #04023d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* HOVER BOTON */
+.proyectowix a:hover {
+  background: #4338ca;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 40px 20px 25px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #1f2937;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  background: #4f46e5;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -110,7 +238,20 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  .grid-proyectos {
+  .grid-proyectos  {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 900px) {
+  .grid-proyectoswix {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-proyectoswix  {
+    grid-template-columns: 1fr;
+  }
+}
+
