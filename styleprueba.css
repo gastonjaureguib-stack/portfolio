@@ -471,20 +471,25 @@ footer {
     font-size: 1rem;
   }
 
-  /* 🔹 SECCIONES (🔥 MISMO ESPACIADO PARA TODAS) */
-  .section,
-  .sectioncontacto,
-  .sectionexp {
-    padding: 30px 16px;
+  /* 🔹 SECCIONES  */
+  .section {
+    padding: 10px ;
+    padding-bottom: 30px;
+    
   }
 
-  /* 🔹 TITULOS (🔥 TODOS IGUALES) */
+  .sectioncontacto,
+  .sectionexp { padding: 20px ;
+    padding-bottom: 30px;
+}
+
+  /* 🔹 TITULOS  */
   .section h2,
   .sectioncontacto h2,
   .sectionexp h2 {
+    padding: 10px;
     font-size: 1.6rem;
     margin-bottom: 10px;
-    padding: 10px;
   }
 
   /* 🔹 TEXTOS */
@@ -548,8 +553,7 @@ footer {
   }
 
   .footer-links {
-    flex-direction: column;
-    gap: 8px;
+      gap: 8px;
   }
 
 }
